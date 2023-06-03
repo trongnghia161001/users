@@ -1,0 +1,5 @@
+# Created at 2023-06-04T02:27:48.445
+Boot Manifest-JAR contains absolute paths in classpath 'D:\PBL5_BOOKSTORE\usersservice\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+

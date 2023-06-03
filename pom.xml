@@ -9,13 +9,13 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.bookstore</groupId>
-    <artifactId>users-service</artifactId>
+    <artifactId>usersservice</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>users-service</name>
-    <description>users-service</description>
+    <name>usersservice</name>
+    <description>usersservice</description>
     <properties>
         <java.version>17</java.version>
-        <spring-cloud.version>2021.0.6</spring-cloud.version>
+        <spring-cloud.version>2021.0.7</spring-cloud.version>
     </properties>
     <dependencies>
         <dependency>
@@ -106,9 +106,13 @@
         </dependency>
         <dependency>
             <groupId>com.bookstore</groupId>
-            <artifactId>common-service</artifactId>
+            <artifactId>commonservice</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
         </dependency>
     </dependencies>
     <dependencyManagement>
@@ -124,17 +128,14 @@
     </dependencyManagement>
 
     <build>
+        <finalName>${project.artifactId}</finalName>
         <plugins>
             <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.1.0</version>
                 <configuration>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
-                    </excludes>
+                    <includes>**/*.java</includes>
                 </configuration>
             </plugin>
         </plugins>

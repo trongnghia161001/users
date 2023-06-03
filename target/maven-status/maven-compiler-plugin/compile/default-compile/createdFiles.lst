@@ -1,0 +1,14 @@
+com\bookstore\usersservice\model\UserDTO.class
+com\bookstore\usersservice\repository\User.class
+com\bookstore\usersservice\controller\UserController.class
+com\bookstore\usersservice\service\UserService.class
+com\bookstore\usersservice\UsersServiceApplication.class
+com\bookstore\usersservice\query\controller\UserQueryController.class
+com\bookstore\usersservice\config\AxonConfig.class
+com\bookstore\usersservice\repository\UserRepository.class
+com\bookstore\usersservice\query\queries\GetAllUserQuery.class
+com\bookstore\usersservice\query\model\UserResponseModel.class
+com\bookstore\usersservice\model\UserRequestModel.class
+com\bookstore\usersservice\query\projection\UserProjection.class
+com\bookstore\usersservice\config\CorsConfig.class
+com\bookstore\usersservice\query\queries\GetUserByIdQuery.class
